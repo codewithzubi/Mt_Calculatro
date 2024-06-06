@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+   <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" name="" placeholder="0" id="inputbox" disabled>
+        <div>
+            <button onclick="clearDisplay()">Ac</button>
+            <button onclick="deleteLast()">Del</button>
+            <button class="op" onclick="appendCharacter('%')">%</button>
+            <button class="op" onclick="appendCharacter('/')">/</button>
+        </div>
+        <div>
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button class="op" onclick="appendCharacter('*')">*</button>
+        </div>
+        <div>
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button class="op" onclick="appendCharacter('-')">-</button>
+        </div>
+        <div>
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button class="op" onclick="appendCharacter('+')">+</button>
+        </div>
+        <div>
+            <button onclick="appendCharacter('00')">00</button>
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('.')">.</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="main.js">
+       
+    </script>
+</body>
+</html>
